@@ -8,7 +8,7 @@ block body %}
 <div class="alert alert-dark" role="alert" style="margin: 20px 50px">
   <h1 align="center">Predicted Genre is : {{predict}}</h1>
   <hr />
-  {% if predict == "HIPHOP" %}
+  {% if predict == "HIP-HOP" %}
   <p style="font-size: 20px">
     Hip hop music is a genre that originated in African-American and Latino
     communities in the United States in the 1970s. It is characterized by its
@@ -19,7 +19,7 @@ block body %}
     samples and other sounds often incorporated to add texture and depth to the
     music.
   </p>
-  {% endif %} {% if predict == "JAZZ" %}
+  {% elif predict == "JAZZ" %}
   <p style="font-size: 20px">
     Jazz music originated in the African American communities of New Orleans in
     the early 20th century. It is characterized by its use of improvisation and
@@ -28,8 +28,7 @@ block body %}
     of the 1920s and 30s. Some famous jazz musicians include Louis Armstrong,
     Duke Ellington, and Miles Davis.
   </p>
-
-  {% endif %} {% if predict == "CLASSICAL" %}
+  {% elif predict == "CLASSICAL" %}
   <p style="font-size: 20px">
     Classical music is a genre of music that originated in Europe around the
     18th century. It is known for its sophisticated and intricate compositions,
@@ -38,8 +37,7 @@ block body %}
     often performed in concert halls. Some famous classical composers include
     Mozart, Beethoven, and Bach.
   </p>
-
-  {% endif %} {% if predict == "COUNTRY" %}
+  {% elif predict == "COUNTRY" %}
   <p style="font-size: 20px">
     Country music originated in the southern United States in the early 20th
     century. It is characterized by its use of acoustic guitars, fiddles, and
@@ -48,8 +46,7 @@ block body %}
     Johnny Cash, Dolly Parton, and Willie Nelson. Country music is known for its
     authenticity and emotional resonance.
   </p>
-
-  {% endif %} {% if predict == "ROCK" %}
+  {% elif predict == "ROCK" %}
   <p style="font-size: 20px">
     Rock music emerged in the 1950s as a subgenre of rhythm and blues. It is
     characterized by its use of electric guitars, bass, drums, and vocals. Rock
@@ -57,8 +54,7 @@ block body %}
     to the rebellious spirit of youth culture. Some famous rock bands include
     The Beatles, Rolling Stones, and Led Zeppelin.
   </p>
-
-  {% endif %} {% if predict == "BLUES" %}
+  {% elif predict == "BLUES" %}
   <p style="font-size: 20px">
     Blues music originated in the African American communities of the southern
     United States in the late 19th century. It is characterized by its use of
@@ -67,8 +63,7 @@ block body %}
     soulful sound. Some famous blues musicians include B.B. King, Muddy Waters,
     and Robert Johnson.
   </p>
-
-  {% endif %} {% if predict == "DISCO" %}
+  {% elif predict == "DISCO" %}
   <p style="font-size: 20px">
     Disco music originated in the United States in the 1970s. It is
     characterized by its use of electronic instruments, a four-on-the-floor
@@ -76,8 +71,7 @@ block body %}
     and having fun, and is associated with the disco dance craze of the 1970s.
     Some famous disco artists include Donna Summer, Bee Gees, and Chic.
   </p>
-
-  {% endif %} {% if predict == "POP" %}
+  {% elif predict == "POP" %}
   <p style="font-size: 20px">
     Pop music is a genre that originated in the 1950s. It is characterized by
     its catchy melodies and simple song structures. Pop music often features
@@ -85,8 +79,7 @@ block body %}
     famous pop artists include Michael Jackson, Beyonce, and Taylor Swift. Pop
     music is known for its upbeat and optimistic vibe.
   </p>
-
-  {% endif %} {% if predict == "METAL" %}
+  {% elif predict == "METAL" %}
   <p style="font-size: 20px">
     Metal music is a subgenre of rock that emerged in the 1970s. It is known for
     its aggressive sound and lyrics, and often features heavy distortion, fast
@@ -94,8 +87,7 @@ block body %}
     Iron Maiden, and Black Sabbath. Metal music is known for its intensity and
     passionate fan base.
   </p>
-
-  {% endif %} {% if predict == "REGGAE" %}
+  {% else %}
   <p style="font-size: 20px">
     Reggae music originated in Jamaica in the late 1960s and is known for its
     laid-back, upbeat rhythm and socially conscious lyrics. It often features
@@ -106,7 +98,6 @@ block body %}
     section. The immediate origins of reggae were in ska and rocksteady; from
     the latter, reggae took over the use of the bass as a percussion instrument.
   </p>
-
   {% endif %}
 </div>
 <br />
